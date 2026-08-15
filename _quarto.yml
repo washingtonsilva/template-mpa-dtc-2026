@@ -1,0 +1,7 @@
+project:
+  type: default
+  execute-dir: project
+
+lang: pt-BR
+
+editor: source

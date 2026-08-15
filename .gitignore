@@ -1,0 +1,62 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100/
+.TemporaryItems/
+.Trashes/
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.fseventsd/
+.apdisk
+
+# Windows
+[Tt]humbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+System Volume Information/
+*.stackdump
+*.lnk
+~$*
+
+# R e RStudio
+.Rhistory
+.RData
+.Ruserdata
+.RDataTmp
+.Rproj.user/
+
+# Quarto
+/.quarto/
+**/*_cache/
+*.knit.md
+*.utf8.md
+*.quarto_ipynb
+
+# Arquivos auxiliares do LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.lof
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+
+# Credenciais e configurações privadas
+.Renviron
+.env
+.env.*
+!.env.example
