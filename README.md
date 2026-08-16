@@ -41,7 +41,7 @@ editor: source
 Essa configuração informa ao Quarto que:
 
 - `type: default` define um projeto padrão, voltado inicialmente à produção de documentos;
-- `execute-dir: project` faz o código usar a raiz do projeto como diretório de trabalho;
+- `execute-dir: project` faz o código usar a raiz do projeto como diretório de trabalho; por isso, os caminhos fornecidos na disciplina começam nessa raiz;
 - `lang: pt-BR` define o português do Brasil como idioma principal;
 - `editor: source` indica a preferência pelo editor de código-fonte do arquivo `.qmd`.
 
@@ -64,19 +64,29 @@ mpa-dtc-2026-nome-sobrenome/
 
 ## Primeira ampliação na Aula 3
 
-Na Aula 3, cada estudante criará a pasta `relatorios/`, a subpasta `01-relatorio/` e o primeiro documento Quarto:
+Na Aula 3, cada estudante criará a pasta `dados/`, salvará nela o CSV fornecido
+e criará o primeiro documento Quarto em `relatorios/01-relatorio/`:
 
 ```text
-relatorios/
-└── 01-relatorio/
-    └── relatorio.qmd
+mpa-dtc-2026-nome-sobrenome/
+├── dados/
+│   └── dados-vendas.csv
+└── relatorios/
+    └── 01-relatorio/
+        └── relatorio.qmd
 ```
 
-Essa estrutura não vem pronta no template porque criar a pasta e o arquivo faz parte da prática da aula. O Git também não registra pastas vazias; uma pasta passa a integrar o repositório quando recebe um arquivo.
+Essa ampliação não vem pronta no template porque criar as pastas, salvar o dado
+fornecido e criar o documento fazem parte da prática da aula. O Git também não
+registra pastas vazias; uma pasta passa a integrar o repositório quando recebe
+um arquivo.
 
 A extensão `.qmd` identifica um documento Quarto Markdown. Esse arquivo é a fonte editável: ele pode reunir cabeçalho YAML, texto em Markdown e código R. Durante a renderização, o código é executado e seus resultados são incorporados às saídas. Alterações de conteúdo devem ser feitas no `.qmd`, não diretamente nos arquivos gerados.
 
-O primeiro documento será renderizado em HTML. A mesma fonte também permitirá comparar as saídas PDF e Word. Todos os arquivos gerados permanecerão em `relatorios/01-relatorio/`, junto à fonte.
+O primeiro documento será renderizado em HTML. A mesma fonte também permitirá
+comparar as saídas PDF e Word. A fonte e os arquivos gerados permanecerão em
+`relatorios/01-relatorio/`; o dado compartilhado pelo projeto ficará em
+`dados/dados-vendas.csv`.
 
 ## Convenções de organização
 
@@ -84,7 +94,10 @@ O primeiro documento será renderizado em HTML. A mesma fonte também permitirá
 - O prefixo numérico com zero à esquerda indica a ordem: `01-`, `02-`, `03-`.
 - O número pertence ao nome da subpasta; dentro dela, a fonte mantém o nome descritivo `relatorio.qmd`.
 - Nomes de arquivos e pastas usam letras minúsculas, sem acentos e com hífens no lugar de espaços.
+- Dados compartilhados por documentos do projeto ficam em `dados/`, na raiz.
 - Imagens e outros recursos exclusivos de um relatório ficam na subpasta correspondente.
+- Na Aula 3, `dados/` não possui subpastas. `dados/brutos/` e
+  `dados/derivados/` serão criadas somente quando tiverem função concreta.
 - Pastas e arquivos novos serão acrescentados somente quando tiverem uma função concreta na disciplina.
 
 ## Evolução do projeto
