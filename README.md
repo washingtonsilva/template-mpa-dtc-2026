@@ -103,8 +103,8 @@ comparar as saídas PDF e Word. A fonte e os arquivos gerados permanecerão em
 ## Evolução do projeto
 
 - **Aula 3:** primeiro documento Quarto renderizado em HTML e comparação com as saídas PDF e Word.
-- **Aula 4:** relatório técnico reprodutível, dados preservados, referências e identidade visual com `_brand.yml`.
-- **Aula 5:** versões parametrizadas do relatório técnico.
+- **Aula 4:** relatórios parametrizados com Quarto.
+- **Aula 5:** relatório técnico reprodutível, dados preservados, referências e identidade visual com `_brand.yml`.
 - **Aula 6:** apresentação produzida com Quarto.
 - **Aula 7:** criação do blog, configuração do website e publicação com GitHub Pages.
 
